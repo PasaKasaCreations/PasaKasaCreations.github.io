@@ -15,7 +15,7 @@ function Navbar() {
         <NavLink to="/contact">Contact</NavLink>
       </div>
       <div>
-        <button className="p-3 pl-5 pr-5 cursor-pointer bg-gradient-to-r from-red-600 to-pink-500 font-bold">
+        <button className="p-5 pl-10 pr-10 cursor-pointer bg-gradient-to-r from-red-600 to-pink-500 font-bold">
           Install Now
         </button>
       </div>
