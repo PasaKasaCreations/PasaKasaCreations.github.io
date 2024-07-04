@@ -1,9 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
+  const [showFixedNavbar, setFixedNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (window.scrollY > 35 && !showFixedNavbar) {
+      setFixedNavbar(true);
+    } else if (window.scrollY <= 2 && showFixedNavbar) {
+      setFixedNavbar(false);
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, [lastScrollY]);
+
   return (
-    <div className="flex items-center justify-around pt-4 pb-4 text-white  bg-transparent absolute top-0 z-10 w-full">
+    <div
+      className={`flex items-center justify-around pt-4 pb-4 text-white top-0 bg-transparent z-10 w-full transition-[top] duration-500 ${
+        showFixedNavbar
+          ? "fixed top-0 animate-toplerp bg-red-600"
+          : "absolute top-0"
+      }`}
+    >
       <div className="flex items-center cursor-pointer">
         <img src="https://themewagon.github.io/beko/img/logo.png" alt="Logo" />
       </div>
