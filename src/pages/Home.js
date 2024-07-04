@@ -4,14 +4,16 @@ function Home() {
   return (
     <div>
       <div className="relative">
-        <img src="https://themewagon.github.io/beko/img/banner_bg.png" />
+        <img
+          src="https://themewagon.github.io/beko/img/banner_bg.png"
+          alt="Logo"
+        />
       </div>
-      <div className="absolute bottom-0 left-14 text-white flex flex-col gap-10 items-start">
-        <h1 className="text-6xl flex flex-col font-">
-          <span>Best Highlights</span>
-          <span>Of The Latest</span>
+      <div className="absolute bottom-5 left-28 text-white flex flex-col gap-8 items-start w-1/3">
+        <h1 className="text-6xl font-Aclonica leading-tight">
+          Best Highlights Of The Latest
         </h1>
-        <p>
+        <p className="leading-7 w-10/12">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
         </p>

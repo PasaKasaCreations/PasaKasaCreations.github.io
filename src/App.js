@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes className="flex items-center gap-10 tracking-wider">
+      <Routes className="flex items-center gap-10 tracking-wider font-Poppins">
         <Route path="/" element={<Home />} />
         <Route path="/fighter" element={<Fighter />} />
         <Route path="/team" element={<Team />} />

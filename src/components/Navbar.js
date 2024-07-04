@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="flex items-center justify-around pt-4 pb-4 bg-black text-white">
+    <div className="flex items-center justify-around pt-4 pb-4 text-white  bg-transparent absolute top-0 z-10 w-full">
       <div className="flex items-center cursor-pointer">
         <img src="https://themewagon.github.io/beko/img/logo.png" alt="Logo" />
       </div>
