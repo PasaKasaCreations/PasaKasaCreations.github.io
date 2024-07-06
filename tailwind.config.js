@@ -7,13 +7,13 @@ module.exports = {
       Aclonica: ["Aclonica", "sans-serif"],
     },
     keyframes: {
-      toplerp: {
+      topdown: {
         "0%": { top: "-50px" },
         "100%%": { top: "0px" },
       },
     },
     animation: {
-      toplerp: "toplerp .3s linear",
+      topdown: "topdown .3s linear",
     },
   },
   plugins: [],
