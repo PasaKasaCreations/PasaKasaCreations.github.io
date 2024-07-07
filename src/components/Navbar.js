@@ -23,14 +23,14 @@ function Navbar() {
 
   return (
     <div
-      className={`flex items-center justify-around pt-4 pb-4 text-white top-0 z-10 w-full transition-[top] duration-500 ${
+      className={`flex items-center justify-around text-white top-0 z-10 w-full transition-[top] duration-500 ${
         showFixedNavbar
           ? "fixed top-0 animate-topdown bg-red-600"
           : "absolute top-0 bg-transparent"
       }`}
     >
       <div className="flex items-center cursor-pointer">
-        <img src="https://themewagon.github.io/beko/img/logo.png" alt="Logo" />
+        <img className="w-28" src="../logo.png" alt="Logo" />
       </div>
       <div className="flex items-center gap-10 tracking-wider cursor-pointer">
         <NavLink to="/">Home</NavLink>
