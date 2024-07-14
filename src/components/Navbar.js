@@ -6,7 +6,7 @@ function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavbar = useCallback(() => {
-    if (window.scrollY > 35 && !showFixedNavbar) {
+    if (window.scrollY > 50 && !showFixedNavbar) {
       setFixedNavbar(true);
     } else if (window.scrollY <= 2 && showFixedNavbar) {
       setFixedNavbar(false);
