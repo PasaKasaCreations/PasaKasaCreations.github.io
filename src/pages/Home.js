@@ -2,11 +2,12 @@ import React from "react";
 
 function Home() {
   return (
-    <div>
-      <div className="relative">
+    <div className="">
+      <div className="relative w-screen h-screen">
         <img
           src="https://themewagon.github.io/beko/img/banner_bg.png"
           alt="Logo"
+          className="object-cover h-full w-full"
         />
       </div>
       <div className="absolute bottom-5 left-28 text-white flex flex-col gap-8 items-start w-1/3">

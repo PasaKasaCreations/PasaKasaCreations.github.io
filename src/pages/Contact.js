@@ -31,69 +31,71 @@ function Contact() {
         ></iframe>
       </div>
 
-      <div className="flex gap-10 w-screen font-Aclonica justify-center">
-        <div className="flex flex-col gap-4 basis-1/2">
-          <textarea
-            className="border h-56 max-h-56 min-h-56  pl-2 placeholder:text-sm pt-2"
-            placeholder="Enter Message"
-          ></textarea>
-          <div className="flex gap-5 h-12">
+      <div className="flex font-Aclonica justify-center">
+        <div className="flex lg:flex-row flex-col gap-10 w-3/4 font-Aclonica justify-center">
+          <div className="flex flex-col gap-4 basis-1/2">
+            <textarea
+              className="border h-56 max-h-56 min-h-56  pl-2 placeholder:text-sm pt-2"
+              placeholder="Enter Message"
+            ></textarea>
+            <div className="flex gap-5 h-12">
+              <input
+                className="border basis-1/2 pl-2 placeholder:text-sm"
+                placeholder="Name"
+              ></input>
+              <input
+                className="border basis-1/2  pl-2 placeholder:text-sm"
+                placeholder="Email Address"
+              ></input>
+            </div>
             <input
-              className="border basis-1/2  pl-2 placeholder:text-sm"
-              placeholder="Name"
+              className="border h-12 pl-2 placeholder:text-sm"
+              placeholder="Enter Subject"
             ></input>
-            <input
-              className="border basis-1/2  pl-2 placeholder:text-sm"
-              placeholder="Email Address"
-            ></input>
+            <button className="pl-2 h-12 cursor-pointer w-44 text-white bg-gradient-to-r from-red-600 to-pink-500">
+              Send Message
+            </button>
           </div>
-          <input
-            className="border h-12 pl-2 placeholder:text-sm"
-            placeholder="Enter Subject"
-          ></input>
-          <button className="pl-2 h-12 cursor-pointer w-44 text-white bg-gradient-to-r from-red-600 to-pink-500">
-            Send Message
-          </button>
-        </div>
-        <div className="flex flex-col gap-5">
-          <div className="flex gap-5">
-            <div>
-              <IoHomeOutline size={30} />
+          <div className="flex flex-col gap-5">
+            <div className="flex gap-5">
+              <div>
+                <IoHomeOutline size={30} />
+              </div>
+              <div>
+                <p>Kathmandu, Nepal</p>
+                <p className="font-Poppins font-light text-gray-500">
+                  Rosemead, CA 910
+                </p>
+              </div>
             </div>
-            <div>
-              <p>Kathmandu, Nepal</p>
-              <p className="font-Poppins font-light text-gray-500">
-                Rosemead, CA 910
-              </p>
+            <div className="flex gap-5">
+              <div>
+                <FaTabletAlt size={30} />
+              </div>
+              <div>
+                <p>Kathmandu, Nepal</p>
+                <p className="font-Poppins font-light text-gray-500">
+                  Mon to Fri 9am to 6pm
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="flex gap-5">
-            <div>
-              <FaTabletAlt size={30} />
-            </div>
-            <div>
-              <p>Kathmandu, Nepal</p>
-              <p className="font-Poppins font-light text-gray-500">
-                Mon to Fri 9am to 6pm
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-5">
-            <div>
-              <CiMail size={30} />
-            </div>
-            <div>
-              <p>Kathmandu, Nepal</p>
-              <p className="font-Poppins font-light text-gray-500">
-                Send us your query anytime!
-              </p>
+            <div className="flex gap-5">
+              <div>
+                <CiMail size={30} />
+              </div>
+              <div>
+                <p>Kathmandu, Nepal</p>
+                <p className="font-Poppins font-light text-gray-500">
+                  Send us your query anytime!
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div className="w-screen flex justify-center">
-        <div className="flex gap-2 w-3/4 font-Aclonica">
+        <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-4 gap-7 w-3/4 font-Aclonica">
           <div className="flex flex-col gap-6 basis-72">
             <div>
               <img
