@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="">
+    <div className="" id="home">
       <div className="relative w-screen h-screen">
         <img
           src="https://themewagon.github.io/beko/img/banner_bg.png"

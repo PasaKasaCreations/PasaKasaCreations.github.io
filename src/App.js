@@ -1,23 +1,18 @@
-import Navbar from "./components/Navbar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "../src/components/Navbar";
 import Home from "./pages/Home";
 import Fighter from "./pages/Fighter";
 import Team from "./pages/Team";
-import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className="flex flex-col items-center tracking-wider font-Poppins">
       <Navbar />
-      <Routes className="flex items-center gap-10 tracking-wider font-Poppins">
-        <Route path="/" element={<Home />} />
-        <Route path="/fighter" element={<Fighter />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+      <Home />
+      <Fighter />
+      <Team />
+      <Contact />
+    </div>
   );
 }
 

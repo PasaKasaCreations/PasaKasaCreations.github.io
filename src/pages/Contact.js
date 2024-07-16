@@ -3,11 +3,10 @@ import { IoHomeOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { FaTabletAlt } from "react-icons/fa";
 import { PiTelegramLogo } from "react-icons/pi";
-import { Link } from "react-router-dom";
 
 function Contact() {
   return (
-    <div className="flex flex-col gap-28">
+    <div className="flex flex-col gap-28" id="contact">
       <div>
         <div className="relative w-screen h-[500px]">
           <img
@@ -121,11 +120,11 @@ function Contact() {
           <div className="flex flex-col gap-6 basis-44">
             <p>Important Link</p>
             <div className="flex flex-col gap-2 text-xs font-Poppins text-gray-400">
-              <Link>WHMCS-bridge</Link>
-              <Link>Search Domain</Link>
-              <Link>My Account</Link>
-              <Link>Shopping Cart</Link>
-              <Link>Our Shop</Link>
+              <a href="#">WHMCS-bridge</a>
+              <a href="#">Search Domain</a>
+              <a href="#">My Account</a>
+              <a href="#">Shopping Cart</a>
+              <a href="#">Our Shop</a>
             </div>
           </div>
           <div className="flex flex-col gap-6 basis-72">

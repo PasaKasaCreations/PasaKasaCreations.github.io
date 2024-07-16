@@ -2,7 +2,7 @@ import React from "react";
 
 function Fighter() {
   return (
-    <div>
+    <div id="fighter">
       <div className="h-screen">
         <div className="relative w-screen h-3/4">
           <img
