@@ -38,13 +38,13 @@ function Contact() {
               className="border h-56 max-h-56 min-h-56  pl-2 placeholder:text-sm pt-2"
               placeholder="Enter Message"
             ></textarea>
-            <div className="flex gap-5 h-12">
+            <div className="flex md:flex-row flex-col gap-5">
               <input
-                className="border basis-1/2 pl-2 placeholder:text-sm"
+                className="border md:basis-1/2 pl-2 placeholder:text-sm h-12"
                 placeholder="Name"
               ></input>
               <input
-                className="border basis-1/2  pl-2 placeholder:text-sm"
+                className="border md:basis-1/2 pl-2 placeholder:text-sm h-12"
                 placeholder="Email Address"
               ></input>
             </div>

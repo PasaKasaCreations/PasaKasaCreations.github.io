@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
-  const [showFixedNavbar, setFixedNavbar] = useState(true);
+  const [showFixedNavbar, setFixedNavbar] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavbar = useCallback(() => {
