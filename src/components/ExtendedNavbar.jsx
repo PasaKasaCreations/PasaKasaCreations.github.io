@@ -4,7 +4,7 @@ import navList from "../data/navlist";
 
 function ExtendedNavbar() {
   return (
-    <div className="flex flex-col px-5 py-3 fixed top-1/2 -translate-y-1/2 h-screen w-screen gap-4 bg-black bg-opacity-30">
+    <div className="flex flex-col px-5 py-3 fixed top-1/2 -translate-y-1/2 h-screen w-screen gap-4 bg-black bg-opacity-60">
       <div className="cursor-pointer self-end">
         <AiOutlineClose size={25} className="font-extrabold text-white" />
       </div>
@@ -17,7 +17,7 @@ function ExtendedNavbar() {
                 navElement.isActive ? "text-blue-500" : "text-black"
               }`}
             >
-              <a href="http">{navElement.linkName}</a>
+              <a href="#home">{navElement.linkName}</a>
             </div>
           );
         })}
