@@ -7,7 +7,7 @@ function Navbar() {
   const { isNavbarActive, changeNavbarState } = useContext(NavbarContext);
 
   return (
-    <div className="flex items-center justify-between w-screen h-24 bg-slate-600 bg-opacity-90 px-5">
+    <div className="flex items-center justify-between w-screen h-20 bg-[#293C5D] px-5 bg-opacity-90 fixed z-10">
       <div>
         <h1 className="font-semibold text-3xl text-white font-Poppins uppercase">
           Pasakasa
