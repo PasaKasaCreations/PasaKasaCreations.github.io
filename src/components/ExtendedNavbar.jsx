@@ -10,7 +10,7 @@ function ExtendedNavbar() {
     <div
       className={`${
         !isNavbarActive && "hidden"
-      } flex flex-col px-5 py-3 fixed top-1/2 -translate-y-1/2 h-screen w-screen gap-4 bg-black bg-opacity-60 z-20`}
+      } flex flex-col px-5 py-3 fixed top-1/2 -translate-y-1/2 h-screen w-screen justify-around bg-black bg-opacity-60 z-20`}
     >
       <div
         className="cursor-pointer self-end"
