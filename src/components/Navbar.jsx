@@ -7,10 +7,10 @@ function Navbar() {
   const { isNavbarActive, changeNavbarState } = useContext(NavbarContext);
 
   return (
-    <div className="flex items-center justify-between w-screen h-24 bg-slate-600 bg-opacity-90 px-16">
+    <div className="flex items-center justify-between w-screen h-24 bg-slate-600 bg-opacity-90 px-5">
       <div>
-        <h1 className="font-semibold text-3xl text-white font-Poppins">
-          ARSHA
+        <h1 className="font-semibold text-3xl text-white font-Poppins uppercase">
+          Pasakasa
         </h1>
       </div>
 
