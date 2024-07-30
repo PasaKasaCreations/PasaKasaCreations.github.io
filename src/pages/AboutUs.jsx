@@ -14,54 +14,62 @@ function AboutUs() {
         </div>
       </div>
       <div>
-        <div className="flex flex-col gap-3">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+        <div className="flex flex-col gap-10 sm:px-10 lg:flex-row">
+          <div className="flex flex-col gap-5">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
 
-          <div>
-            <div className="flex items-center gap-2">
-              <TiTick />
-              <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <TiTick />
-              <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <TiTick />
-              <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div className="flex flex-col gap-1">
+              <div className="flex items-center gap-2">
+                <TiTick />
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <TiTick />
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <TiTick />
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
             </div>
           </div>
 
-          <p>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
-          </p>
-          <div className="flex items-center justify-center rounded-md w-48 h-12 gap-2 text-blue-400 border-2 border-blue-400 cursor-pointer hover:bg-blue-400 hover:text-white select-none">
-            <button>Read More</button>
-            <FaArrowRight />
+          <div className="flex flex-col gap-5 lg:basis-2/3">
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore
+              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </p>
+            <div className="flex items-center justify-center rounded-md w-48 h-12 gap-2 text-blue-400 border-2 border-blue-400 cursor-pointer hover:bg-blue-400 hover:text-white select-none">
+              <button>Read More</button>
+              <FaArrowRight />
+            </div>
           </div>
         </div>
 
-        <div className="flex flex-col items-center py-12">
-          <img
-            src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/why-us.png"
-            alt="Logo"
-            className="w-96"
-          />
-          <p className="text-4xl">
-            Eum ipsam laborum deleniti velit pariatur architecto aut nihil
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
-            aute irure dolor in reprehenderit
-          </p>
+        <div className="flex flex-col items-center py-12 gap-14 lg:flex-row">
+          <div className="w-2/3 lg:order-1 lg:max-w-[400px]">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/why-us.png"
+              alt="Logo"
+            />
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <p className="text-4xl">
+              Eum ipsam laborum deleniti velit pariatur architecto aut nihil
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+              aute irure dolor in reprehenderit
+            </p>
+          </div>
         </div>
       </div>
     </div>
