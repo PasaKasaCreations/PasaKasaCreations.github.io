@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function AboutUs() {
   return (
-    <div className="flex flex-col items-center py-10 gap-12 px-5">
+    <div className="flex flex-col items-center py-10 gap-12 px-5" id="about">
       <div>
         <p className="uppercase font-Poppins font-bold text-3xl text-[#37517E]">
           About Us
@@ -60,7 +60,7 @@ function AboutUs() {
             />
           </div>
 
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 ">
             <p className="text-4xl">
               Eum ipsam laborum deleniti velit pariatur architecto aut nihil
             </p>

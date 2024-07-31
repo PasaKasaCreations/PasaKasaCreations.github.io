@@ -4,7 +4,12 @@ import navList from "../data/navlist";
 import NavbarContext from "../context/NavbarContext";
 
 function Navbar() {
-  const { isNavbarActive, changeNavbarState } = useContext(NavbarContext);
+  const {
+    isNavbarActive,
+    changeNavbarState,
+    activeNavElementId,
+    changeNavbarActiveElementId,
+  } = useContext(NavbarContext);
 
   return (
     <div className="flex items-center justify-between w-screen h-20 bg-[#293C5D] bg-transparent px-5 bg-opacity-90 fixed z-10">
@@ -19,12 +24,17 @@ function Navbar() {
           {navList.map((navElement) => {
             return (
               <div
+                onClick={() => {
+                  changeNavbarActiveElementId(navElement.id);
+                }}
                 key={navElement.id}
                 className={`cursor-pointer ${
-                  navElement.isActive ? "text-blue-300" : "text-white"
+                  activeNavElementId === navElement.id
+                    ? "text-blue-300"
+                    : "text-white"
                 }`}
               >
-                <a href="#home">{navElement.linkName}</a>
+                <a href={`#${navElement.linkAddress}`}>{navElement.linkName}</a>
               </div>
             );
           })}

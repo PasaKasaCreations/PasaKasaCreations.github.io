@@ -4,7 +4,12 @@ import navList from "../data/navlist";
 import NavbarContext from "../context/NavbarContext";
 
 function ExtendedNavbar() {
-  const { isNavbarActive, changeNavbarState } = useContext(NavbarContext);
+  const {
+    isNavbarActive,
+    changeNavbarState,
+    activeNavElementId,
+    changeNavbarActiveElementId,
+  } = useContext(NavbarContext);
 
   return (
     <div
@@ -27,12 +32,15 @@ function ExtendedNavbar() {
               key={navElement.id}
               onClick={() => {
                 changeNavbarState(false);
+                changeNavbarActiveElementId(navElement.id);
               }}
               className={`cursor-pointer ${
-                navElement.isActive ? "text-blue-500" : "text-black"
+                activeNavElementId === navElement.id
+                  ? "text-blue-500"
+                  : "text-black"
               }`}
             >
-              <a href="#home">{navElement.linkName}</a>
+              <a href={`#${navElement.linkAddress}`}>{navElement.linkName}</a>
             </div>
           );
         })}
