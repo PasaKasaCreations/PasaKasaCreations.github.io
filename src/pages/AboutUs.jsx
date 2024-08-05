@@ -1,18 +1,12 @@
 import React from "react";
 import { TiTick } from "react-icons/ti";
 import { FaArrowRight } from "react-icons/fa";
+import Heading from "../components/Heading";
 
 function AboutUs() {
   return (
     <div className="flex flex-col items-center py-10 gap-12 px-5" id="about">
-      <div>
-        <p className="uppercase font-Poppins font-bold text-3xl text-[#37517E]">
-          About Us
-        </p>
-        <div className="bg-gray-700 h-[1px] relative">
-          <div className="bg-blue-500 h-[3px] w-1/3 absolute top-0s left-1/2 -translate-x-1/2"></div>
-        </div>
-      </div>
+      <Heading heading={"About Us"} />
       <div>
         <div className="flex flex-col gap-10 sm:px-10 lg:flex-row">
           <div className="flex flex-col gap-5">
