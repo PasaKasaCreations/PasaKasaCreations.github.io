@@ -22,6 +22,22 @@ function Services() {
         <ServiceCard />
         <ServiceCard />
       </div>
+
+      <div className="flex flex-col gap-8 items-center justify-center py-28 xl:flex-row sm:px-20">
+        <div className="flex flex-col items-center gap-2 xl:items-start">
+          <p className="text-2xl font-bold">Call To Action</p>
+          <p className="text-center xl:text-left">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+
+        <div className="flex items-center justify-center rounded-full w-48 h-12 gap-2 text-blue-400 border-2 border-blue-400 cursor-pointer hover:bg-blue-400 hover:text-white select-none">
+          <button>Call To Action</button>
+        </div>
+      </div>
     </div>
   );
 }
