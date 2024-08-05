@@ -6,7 +6,7 @@ function Services() {
   return (
     <div
       id="services"
-      className=" px-5 flex flex-col items-center gap-12 bg-[#F5F6F8]"
+      className=" px-5 flex flex-col items-center gap-12 bg-[#F5F6F8] py-10"
     >
       <div className="flex flex-col items-center gap-4">
         <Heading heading={"Services"} />
