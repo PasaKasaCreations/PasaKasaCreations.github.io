@@ -5,6 +5,7 @@ import NavbarContext from "./context/NavbarContext";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   const [isNavbarActive, setIsNavbarActive] = useState(false);
@@ -34,6 +35,7 @@ function App() {
       <Home />
       <AboutUs />
       <Services />
+      <Portfolio />
     </div>
   );
 }
