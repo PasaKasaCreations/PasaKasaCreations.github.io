@@ -7,6 +7,7 @@ import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Team from "./pages/Team";
+import Contact from "./pages/Contact";
 
 function App() {
   const [isNavbarActive, setIsNavbarActive] = useState(false);
@@ -38,6 +39,7 @@ function App() {
       <Services />
       <Portfolio />
       <Team />
+      <Contact />
     </div>
   );
 }
