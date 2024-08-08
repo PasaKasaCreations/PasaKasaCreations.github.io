@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
+import Team from "./pages/Team";
 
 function App() {
   const [isNavbarActive, setIsNavbarActive] = useState(false);
@@ -36,6 +37,7 @@ function App() {
       <AboutUs />
       <Services />
       <Portfolio />
+      <Team />
     </div>
   );
 }

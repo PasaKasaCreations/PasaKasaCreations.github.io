@@ -17,7 +17,7 @@ const navList = [
   {
     id: 4,
     linkName: "Portfolio",
-    linkAddress: "protfolio",
+    linkAddress: "portfolio",
   },
   {
     id: 5,
