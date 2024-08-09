@@ -17,7 +17,7 @@ function Contact() {
       </div>
 
       <div className="flex flex-col gap-7 md:flex-row">
-        <div className="flex flex-col gap-7 basis-1/2">
+        <div className="flex flex-col gap-7 basis-1/2 shadow-md shadow-gray p-4 border-t-2 border-b-2 border-blue-500">
           <ContactCard
             icon={<CiLocationOn />}
             title={"Address"}
@@ -44,23 +44,26 @@ function Contact() {
           ></iframe>
         </div>
 
-        <form className="flex flex-col gap-5 px-2 basis-1/2">
-          <div className="flex flex-col gap-2">
-            <p>Your Name</p>
-            <input
-              required
-              type="text"
-              className="border outline-none p-2 focus:outline-blue-300"
-            />
+        <form className="flex flex-col gap-5 px-4 basis-1/2 shadow-md shadow-gray p-2 border-t-2 border-b-2 border-blue-500">
+          <div className="flex flex-col md:flex-row gap-5 md:justify-between">
+            <div className="flex flex-col gap-2 md:basis-1/2">
+              <p>Your Name</p>
+              <input
+                required
+                type="text"
+                className="border outline-none p-2 focus:outline-blue-300"
+              />
+            </div>
+            <div className="flex flex-col gap-2 md:basis-1/2">
+              <p>Your Email</p>
+              <input
+                required
+                type="email"
+                className="border outline-none p-2 focus:outline-blue-300"
+              />
+            </div>
           </div>
-          <div className="flex flex-col gap-2">
-            <p>Your Email</p>
-            <input
-              required
-              type="email"
-              className="border outline-none p-2 focus:outline-blue-300"
-            />
-          </div>
+
           <div className="flex flex-col gap-2">
             <p>Subject</p>
             <input
@@ -73,13 +76,13 @@ function Contact() {
             <p>Message</p>
             <textarea
               required
-              className="border outline-none p-2 focus:outline-blue-300 max-h-40 min-h-40"
+              className="border outline-none p-2 focus:outline-blue-300 max-h-52 min-h-52"
             />
           </div>
           <input
             type="submit"
             value="Send Message"
-            className="bg-blue-400 text-white rounded-full px-5 h-10 cursor-pointer self-center hover:bg-blue-300"
+            className="bg-blue-400 text-white rounded-full px-7 h-10 cursor-pointer self-center hover:bg-blue-300"
           />
         </form>
       </div>
