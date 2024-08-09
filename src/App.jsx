@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
+import TopButton from "./components/TopButton";
 
 function App() {
   const [isNavbarActive, setIsNavbarActive] = useState(false);
@@ -40,6 +41,7 @@ function App() {
       <Portfolio />
       <Team />
       <Contact />
+      <TopButton />
     </div>
   );
 }
