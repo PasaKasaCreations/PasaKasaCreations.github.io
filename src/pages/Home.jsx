@@ -4,7 +4,7 @@ import ScrollingSponser from "../components/ScrollingSponser";
 function Home() {
   return (
     <div id="home">
-      <div className="bg-[#37517E] h-screen sm:h-[110vh] md:h-[120vh] px-5 sm:px-16 flex flex-col gap-7 pt-24 items-center justify-center md:pt-0 lg:flex-row lg:h-[85vh]">
+      <div className="bg-[#37517E] h-screen sm:h-[110vh] md:h-[120vh] px-5 sm:px-16 flex flex-col gap-7 pt-24 items-center justify-center md:pt-0 lg:flex-row lg:h-[100vh]">
         <div className="animate-pulse lg:order-2">
           <img
             src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/hero-img.png"

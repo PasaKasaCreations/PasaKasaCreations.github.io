@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div className="flex items-center justify-between w-screen h-20 bg-[#293C5D] bg-transparent px-5 bg-opacity-90 fixed z-10">
-      <div>
+      <div className="cursor-pointer">
         <h1 className="font-semibold text-3xl text-white font-Poppins uppercase">
           Pasakasa
         </h1>
