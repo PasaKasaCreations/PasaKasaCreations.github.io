@@ -1,81 +1,31 @@
 import React from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 6,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 4,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 3,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 2,
-  },
-};
+import scrollingSponser from "../data/scrollingSponserData";
 
 function ScrollingSponser() {
   return (
-    <Carousel
-      responsive={responsive}
-      swipeable={true}
-      draggable={true}
-      showDots={false}
-      ssr={false}
-      infinite={true}
-      autoPlay={true}
-      autoPlaySpeed={1000}
-      keyBoardControl={true}
-      customTransition="all .5"
-      transitionDuration={500}
-      containerClass="carousel-container"
-      removeArrowOnDeviceType={[
-        "tablet",
-        "mobile",
-        "desktop",
-        "superLargeDesktop",
-      ]}
-      dotListClass="custom-dot-list-style"
-      itemClass="carousel-item-padding-30-px"
-      className="select-none h-24 bg-gray-100"
-    >
-      <div className="w-32">
-        <img
-          draggable="false"
-          src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-1.png"
-          alt="Logo"
-        />
-      </div>
-      <div className="w-32">
-        <img
-          draggable="false"
-          src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-1.png"
-          alt="Logo"
-        />
-      </div>
-      <div className="w-32">
-        <img
-          draggable="false"
-          src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-1.png"
-          alt="Logo"
-        />
-      </div>
-      <div className="w-32">
-        <img
-          draggable="false"
-          src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-1.png"
-          alt="Logo"
-        />
-      </div>
-    </Carousel>
+    <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_50px,_black_calc(100%-50px),transparent_100%)] py-2">
+      <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+        {scrollingSponser.map((item) => {
+          return (
+            <li key={item.id}>
+              <img src={item.imageLink} alt="sponser" className="w-28"></img>
+            </li>
+          );
+        })}
+      </ul>
+      <ul
+        class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+        aria-hidden="true"
+      >
+        {scrollingSponser.map((item) => {
+          return (
+            <li key={item.id}>
+              <img src={item.imageLink} alt="sponser" className="w-28"></img>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }
 
