@@ -37,9 +37,9 @@ function Contact() {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3532.6592629474626!2d85.38332010794466!3d27.69692428643738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1723134649771!5m2!1sen!2snp"
             title="map"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
             className="w-full h-60"
           ></iframe>
         </div>

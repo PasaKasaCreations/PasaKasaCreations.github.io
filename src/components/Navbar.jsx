@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import navList from "../data/navlist";
 import NavbarContext from "../context/NavbarContext";
 
 function Navbar() {
+  const [offset, setOffset] = useState(0);
   const {
     isNavbarActive,
     changeNavbarState,
@@ -11,8 +12,22 @@ function Navbar() {
     changeNavbarActiveElementId,
   } = useContext(NavbarContext);
 
+  useEffect(() => {
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const onScroll = () => {
+    setOffset(window.scrollY);
+  };
+
   return (
-    <div className="flex items-center justify-between w-screen h-20 bg-[#293C5D] bg-transparent px-10 bg-opacity-90 fixed z-10">
+    <div
+      className={`${
+        offset > 500 ? "bg-opacity-90" : "bg-transparent"
+      } flex items-center justify-between w-screen h-20 bg-[#293C5D]  px-10  fixed z-10`}
+    >
       <div className="cursor-pointer">
         <h1 className="font-semibold text-3xl text-white font-Poppins uppercase">
           Pasakasa

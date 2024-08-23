@@ -21,6 +21,7 @@ function Team() {
         {teamData.map((data) => {
           return (
             <TeamCard
+              key={data.id}
               name={data.name}
               position={data.position}
               description={data.description}

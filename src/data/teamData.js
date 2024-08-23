@@ -1,5 +1,6 @@
 const teamData = [
   {
+    id: 1,
     name: "Walter White",
     position: "Chief Executive Officer",
     description: "Explicabo voluptatem mollitia et repellat qui dolorum quasi",
@@ -7,6 +8,7 @@ const teamData = [
       "https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-1.jpg",
   },
   {
+    id: 2,
     name: "Sarah Jhonson",
     position: "Product Manager",
     description:
@@ -15,6 +17,7 @@ const teamData = [
       "https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-2.jpg",
   },
   {
+    id: 3,
     name: "William Anderson",
     position: "CTO",
     description: "Quisquam facilis cum velit laborum corrupti fuga rerum quia",
@@ -22,6 +25,7 @@ const teamData = [
       "https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-3.jpg",
   },
   {
+    id: 4,
     name: "Amanda Jepson",
     position: "Accountant",
     description:
