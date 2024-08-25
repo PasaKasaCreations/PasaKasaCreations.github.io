@@ -25,7 +25,7 @@ function Navbar() {
   return (
     <div
       className={`${
-        offset > 500 ? "bg-opacity-90" : "bg-transparent"
+        offset > 200 ? "bg-opacity-90" : "bg-transparent"
       } flex items-center justify-between w-screen h-20 bg-[#293C5D]  px-10  fixed z-10`}
     >
       <div className="cursor-pointer">
