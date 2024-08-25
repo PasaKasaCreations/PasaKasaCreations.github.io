@@ -9,6 +9,7 @@ import Portfolio from "./pages/Portfolio";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import TopButton from "./components/TopButton";
+import { BrowserRouter, useLocation } from "react-router-dom";
 
 function App() {
   const [isNavbarActive, setIsNavbarActive] = useState(false);
@@ -33,7 +34,9 @@ function App() {
         }}
       >
         <Navbar />
-        <ExtendedNavbar />
+        <BrowserRouter>
+          <ExtendedNavbar />
+        </BrowserRouter>
       </NavbarContext.Provider>
       <Home />
       <AboutUs />

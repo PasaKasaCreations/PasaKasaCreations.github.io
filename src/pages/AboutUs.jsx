@@ -11,8 +11,12 @@ function AboutUs() {
         <div className="flex flex-col gap-10 sm:px-10 lg:flex-row">
           <div className="flex flex-col gap-5">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              At PasaKasa Creations, we’re not just developers—we’re
+              storytellers, innovators, and dreamers. Founded in 2023, our
+              mission is to redefine the gaming landscape by blending
+              cutting-edge technology with imaginative storytelling. Whether
+              it’s creating immersive AR and VR experiences or developing
+              complex simulations, we’re here to bring your vision to life.
             </p>
 
             <div className="flex flex-col gap-1">

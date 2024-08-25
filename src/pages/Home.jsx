@@ -14,10 +14,11 @@ function Home() {
         </div>
         <div className="text-white font-Poppins flex flex-col gap-2">
           <h3 className="font-bold text-2xl sm:text-5xl">
-            Better Solutions For Your Business
+            Transform Imagination into Reality
           </h3>
           <p className="text-lg text-gray-300 md:text-xl">
-            We are team of talented designers making websites with Bootstrap
+            Explore innovative game development, AR, VR, and simulation
+            solutions tailored to your needs
           </p>
         </div>
       </div>

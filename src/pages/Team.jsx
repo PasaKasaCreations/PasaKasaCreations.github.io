@@ -11,10 +11,7 @@ function Team() {
     >
       <div className="flex flex-col items-center gap-4 text-center">
         <Heading heading={"Team"} />
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
+        <p>Meet the Lakheys of PasaKasa</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">

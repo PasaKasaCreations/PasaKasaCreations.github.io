@@ -10,10 +10,7 @@ function Contact() {
     <div id="contact" className=" px-5 flex flex-col gap-12 bg-[#F5F6F8] py-10">
       <div className="flex flex-col items-center gap-4">
         <Heading heading={"Contact"} />
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
+        <p>Have a project in mind? Let’s bring it to life!</p>
       </div>
 
       <div className="flex flex-col gap-7 md:flex-row">
@@ -21,21 +18,20 @@ function Contact() {
           <ContactCard
             icon={<CiLocationOn />}
             title={"Address"}
-            description={"A108 Adam Street, New York, NY 535022"}
+            description={"Kshitij Marg, Kathmandu, Nepal"}
           />
           <ContactCard
             icon={<IoCallOutline />}
             title={"Call Us"}
-            description={"+1 5589 55488 55"}
+            description={"+977-9862751805"}
           />
           <ContactCard
             icon={<MdOutlineEmail />}
             title={"Email Us"}
-            description={"info@example.com"}
+            description={"pasakasacreations@gmail.com"}
           />
-
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3532.6592629474626!2d85.38332010794466!3d27.69692428643738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1723134649771!5m2!1sen!2snp"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d220.8259967397178!2d85.33353046044961!3d27.679719781325108!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c02d9eeb29%3A0x310e24f59ede33b!2sChhitijnagar%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1724569675747!5m2!1sen!2snp"
             title="map"
             allowFullScreen=""
             loading="lazy"
