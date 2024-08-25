@@ -11,7 +11,13 @@ function Team() {
     >
       <div className="flex flex-col items-center gap-4 text-center">
         <Heading heading={"Team"} />
-        <p>Meet the Lakheys of PasaKasa</p>
+        <div>
+          <p className="font-semibold">
+            our strength lies in our team — a group of passionate and talented
+            individuals who live and breathe gaming.
+          </p>
+          <p className="font-semibold text-lg">Meet the Lakheys of PasaKasa</p>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
