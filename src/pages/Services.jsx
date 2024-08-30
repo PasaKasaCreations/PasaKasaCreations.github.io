@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "../components/Heading";
 import ServiceCard from "../components/ServiceCard";
+import servicesData from "../data/servicesData";
 
 function Services() {
   return (
@@ -17,10 +18,15 @@ function Services() {
       </div>
 
       <div className="grid grid-cols-1 gap-5 justify-items-center sm:grid-cols-2 xl:grid-cols-4">
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
+        {servicesData.map((data) => {
+          return (
+            <ServiceCard
+              key={data.id}
+              title={data.title}
+              description={data.description}
+            ></ServiceCard>
+          );
+        })}
       </div>
 
       <div className="flex flex-col gap-8 items-center justify-center py-28 xl:flex-row sm:px-20">
