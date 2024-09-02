@@ -1,6 +1,4 @@
 import React from "react";
-import { TiTick } from "react-icons/ti";
-import { FaArrowRight } from "react-icons/fa";
 import Heading from "../components/Heading";
 
 function AboutUs() {
